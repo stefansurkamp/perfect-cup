@@ -1,0 +1,37 @@
+name: Question
+description: Ask a question or request clarification about Perfect Cup.
+title: "[Question]: "
+labels:
+  - Question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about how Perfect Cup works or what to expect? Ask here.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to know?
+      placeholder: How do I...?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Any background that helps us understand your question.
+      placeholder: I was doing X and expected Y...
+    validations:
+      required: false
+
+  - type: input
+    id: app_version
+    attributes:
+      label: Perfect Cup app version (optional)
+      description: If your question depends on the version you're using.
+      placeholder: 1.2.0
+    validations:
+      required: false

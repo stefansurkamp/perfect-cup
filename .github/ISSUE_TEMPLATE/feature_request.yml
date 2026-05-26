@@ -1,0 +1,47 @@
+name: Feature request
+description: Suggest a new feature or improvement for Perfect Cup.
+title: "[Feature]: "
+labels:
+  - Feature Request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Perfect Cup!  
+        Please describe the problem you're facing and the feature you'd like to see.
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / problem
+      description: What problem are you trying to solve? How does it affect your use of Perfect Cup?
+      placeholder: I often run into this situation...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed solution
+      description: How do you imagine the feature working?
+      placeholder: It would be great if Perfect Cup could...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any other approaches or workarounds you've thought about.
+      placeholder: I've also tried...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Mockups, examples from other apps, or anything else that clarifies your idea.
+      placeholder: For example, in app X they do this by...
+    validations:
+      required: false

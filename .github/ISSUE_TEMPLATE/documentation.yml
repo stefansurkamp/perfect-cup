@@ -1,0 +1,46 @@
+name: Documentation improvement
+description: Suggest improvements or additions to Perfect Cup documentation.
+title: "[Docs]: "
+labels:
+  - Documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us make Perfect Cup's documentation clearer and more helpful.
+
+  - type: textarea
+    id: area
+    attributes:
+      label: Area of documentation
+      description: What part of the docs is this about? (e.g., onboarding, a specific screen, FAQ, etc.)
+      placeholder: The section about brew recipes...
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: What's unclear or missing?
+      description: Describe what's confusing, incorrect, or missing.
+      placeholder: This part is confusing because...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: How would you improve this documentation?
+      placeholder: I'd suggest changing it to...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context
+      description: Links, screenshots, or any examples to illustrate the issue.
+      placeholder: Screenshot or link to the confusing part...
+    validations:
+      required: false
